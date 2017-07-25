@@ -1,0 +1,32 @@
+{
+  "name": "resume",
+  "version": "1.5.0",
+  "description": "resume.congm.in",
+  "main": "index.html",
+  "scripts": {
+    "dev": "webpack-dev-server --mode=development --open",
+    "build": "webpack --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mcc108/resume.git"
+  },
+  "author": "Cong Min",
+  "license": "cc-by-sa-4.0",
+  "homepage": "http://resume.congm.in",
+  "devDependencies": {
+    "autoprefixer": "^8.2.0",
+    "css-loader": "^0.28.11",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "image-webpack-loader": "^4.2.0",
+    "less": "^3.0.1",
+    "less-loader": "^4.1.0",
+    "postcss-loader": "^2.1.3",
+    "style-loader": "^0.20.3",
+    "url-loader": "^1.0.1",
+    "webpack": "=4.5.0",
+    "webpack-cli": "^2.0.14",
+    "webpack-dev-server": "^3.1.3"
+  }
+}

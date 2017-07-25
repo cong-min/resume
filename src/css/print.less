@@ -1,0 +1,112 @@
+// 打印样式
+@media print {
+    body {
+        padding-top: 0;
+    }
+    .content {
+        width: 970px;
+        height: 1372px;
+        margin: 0 auto;
+        border-radius: 0;
+        .content-hd {
+            padding: 60px 50px 40px;
+            .title {
+                font-size: 56px;
+                padding-bottom: 5px;
+                margin-bottom: 5px;
+            }
+            .name h1 small {
+                font-size: 26px;
+                padding-left: 12px;
+            }
+            .job h2 {
+                font-size: 26px;
+            }
+            .info {
+                line-height: 32px;
+                h2 {
+                    font-size: 19px;
+                }
+                h3 {
+                    font-size: 17px;
+                }
+            }
+            .contact ul {
+                margin-bottom: 0;
+                > li {
+                    height: 25px;
+                    > a {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        .content-bd {
+            padding: 25px 30px 50px;
+            .item-hd {
+                padding: 10px 0 8px;
+            }
+            .project .item-hd {
+                padding: 10px 0 6px;
+            }
+            .practice .item-bd,
+            .project .item-bd {
+                margin-bottom: 0;
+            }
+            .prize .item-hd {
+                padding: 11px 0 5px;
+            }
+            .practice .item-time {
+                width: 31%;
+            }
+            .section-hd {
+                margin: 10px auto 8px;
+            }
+            section {
+                padding: 10px 20px;
+            }
+        }
+        .section-content {
+            line-height: 1.75 !important;
+        }
+        .project {
+            padding-top: 5px !important;
+        }
+        .print-hidden{
+            display: none;
+        }
+    }
+    .pdf {
+        display: none;
+    }
+    .last-modified {
+        position: fixed;
+        z-index: 1;
+        width: 970px;
+        top: auto;
+        bottom: 30px;
+        text-align: left;
+        padding-left: 50px;
+        color: #d1d1d1;
+    }
+    footer {
+        position: fixed;
+        z-index: 1;
+        width: 970px;
+        bottom: 28px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: right;
+        padding-right: 45px;
+        &.github-footer {
+            display: none;
+        }
+        &.print-footer {
+            display: block;
+            .footer-link {
+                margin: 0;
+            }
+        }
+    }
+}
+
