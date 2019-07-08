@@ -1,18 +1,16 @@
 ## 这是一份由自己设计并开发的简历
 
-* http://resume.congm.in
+* `v2019` http://resume.congm.in
+* `v2017` [2017版校招简历](https://github.com/mcc108/resume/tree/v2017)
 
-[校招简历 v2017](https://github.com/mcc108/resume/tree/v2017)
+**Fork或借鉴请遵循 [LICENSE](./LICENSE) 并注明出处 [@ Cong Min](https://github.com/mcc108/resume) . Thx**
 
-Fork或借鉴请注明出处 [@ Cong Min](https://github.com/mcc108/resume) . Thx
+- 0、**安装依赖：** `npm i`
+- 1、**启动：** `npm run dev` 开启调试服务
+- 2、**开发：** 编辑 `/src/index.html` 文件，Web服务实时预览
+- 3、**生产：** `npm run build` 打包构建
+- 4、**预览：** 浏览器打开 `/index.html` 查看结果
 
-前提: 已安装`nodejs` `npm`
-- 0、`npm i` 安装依赖
-- 1、**开发**：命令行运行 `npm run dev` 开启调试服务器
-- 2、编辑 `/src/index.html` 文件实时调试
-- 3、**生产**：命令行运行 `npm run build` 进行打包
-- 4、浏览器打开 `/index.html` 进行预览
-
-> chrome浏览器 - "打印" - 设置无边距 - 即可导出
+> chrome浏览器 > 打印 > 目标另存为`PDF` > 更多设置无边距 > 即可导出
 
 ![闵聪-简历](https://raw.githubusercontent.com/mcc108/resume/master/resume.jpg)
