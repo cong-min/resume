@@ -2,6 +2,8 @@
 
 * http://resume.congm.in
 
+[校招简历 v2017](https://github.com/mcc108/resume/tree/v2017)
+
 Fork或借鉴请注明出处 [@ Cong Min](https://github.com/mcc108/resume) . Thx
 
 前提: 已安装`nodejs` `npm`

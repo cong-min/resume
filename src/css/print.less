@@ -1,15 +1,18 @@
 // 打印样式
+// 调试方式 Chrome Devtools > Menu > More Tools > Rendering -> Emulate CSS media: print.
 @media print {
     body {
         padding-top: 0;
     }
     .content {
-        width: 970px;
-        height: 1372px;
+        width: 1024px;
+        height: 1450px; // A4 大小
         margin: 0 auto;
         border-radius: 0;
+        box-shadow: none;
         .content-hd {
-            padding: 60px 50px 40px;
+            padding-top: 60px;
+            padding-bottom: 40px;
             .title {
                 font-size: 56px;
                 padding-bottom: 5px;
@@ -32,7 +35,6 @@
                 }
             }
             .contact ul {
-                margin-bottom: 0;
                 > li {
                     height: 25px;
                     > a {
@@ -42,37 +44,29 @@
             }
         }
         .content-bd {
-            padding: 25px 30px 50px;
-            .item-hd {
-                padding: 10px 0 8px;
+            padding-top: 25px;
+            padding-bottom: 50px;
+        }
+        section {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            ~ section {
+                padding-top: 0;
             }
-            .project .item-hd {
-                padding: 10px 0 6px;
-            }
-            .practice .item-bd,
-            .project .item-bd {
-                margin-bottom: 0;
-            }
-            .prize .item-hd {
-                padding: 11px 0 5px;
-            }
-            .practice .item-time {
-                width: 31%;
-            }
-            .section-hd {
-                margin: 10px auto 8px;
-            }
-            section {
-                padding: 10px 20px;
-            }
+        }
+        .section-hd {
+            padding-bottom: 10px;
+        }
+        .item-hd {
+            padding-bottom: 6px;
+        }
+        .item-bd {
+            margin-bottom: 8px;
         }
         .section-content {
-            line-height: 1.75 !important;
+            line-height: 26px !important;
         }
-        .project {
-            padding-top: 5px !important;
-        }
-        .print-hidden{
+        .print-hidden {
             display: none;
         }
     }
@@ -80,24 +74,24 @@
         display: none;
     }
     .last-modified {
-        position: fixed;
+        position: absolute;
         z-index: 1;
         width: 970px;
         top: auto;
-        bottom: 30px;
+        bottom: 25px;
         text-align: left;
-        padding-left: 50px;
+        padding-left: 20px;
         color: #d1d1d1;
     }
     footer {
-        position: fixed;
+        position: absolute;
         z-index: 1;
         width: 970px;
-        bottom: 28px;
+        bottom: 25px;
         left: 50%;
         transform: translateX(-50%);
         text-align: right;
-        padding-right: 45px;
+        padding-right: 20px;
         &.github-footer {
             display: none;
         }
