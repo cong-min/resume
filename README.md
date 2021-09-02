@@ -1,3 +1,5 @@
+![license](https://img.shields.io/github/license/mcc108/resume)
+
 ## 这是一份由自己设计并开发的简历
 
 * `v2019` http://resume.congm.in
