@@ -1,18 +1,29 @@
-![license](https://img.shields.io/github/license/mcc108/resume)
+<p align="center"><img alt="license" src="https://img.shields.io/github/license/cong-min/resume"></p>
 
-## 这是一份由自己设计并开发的简历
+<h1 align="center">这是一份由自己设计并开发的简历</h1>
 
-* `v2019` http://resume.congm.in
-* `v2017` [2017版校招简历](https://github.com/mcc108/resume/tree/v2017)
+<p align="center">
+  <a target="_blank" href="https://resume.congm.in">https://resume.congm.in</a>
+</p>
 
-**Fork或借鉴请遵循 [LICENSE](./LICENSE) 并注明出处 [@ Cong Min](https://github.com/mcc108/resume) . Thx**
+<p align="center">
+  <a href="https://github.com/cong-min/resume/tree/v2023"><code>v2023</code></a>
+  <a href="https://github.com/cong-min/resume/tree/v2019"><code>v2019</code></a>
+  <a href="https://github.com/cong-min/resume/tree/v2017"><code>v2017</code></a>
+</p>
 
-- 0、**安装依赖：** `npm i`
-- 1、**启动：** `npm run dev` 开启调试服务
-- 2、**开发：** 编辑 `/src/index.html` 文件，Web服务实时预览
-- 3、**生产：** `npm run build` 打包构建
-- 4、**预览：** 浏览器打开 `/index.html` 查看结果
 
-> chrome浏览器 > 打印 > 目标另存为`PDF` > 更多设置无边距 > 即可导出
+## 快速开始
 
-![闵聪-简历](https://raw.githubusercontent.com/mcc108/resume/master/resume.jpg)
+1. `npm i` 安装依赖
+2. `npm run dev` 开发调试
+3. 编辑 `/src/index.html` 文件
+4. `npm run build` 构建
+5. 浏览器打开 `/index.html` 查看产物
+
+> Chrome 浏览器 > 打印 > 更多设置无边距 > 另存为 PDF > 导出
+
+
+---
+
+**Fork 或借鉴请遵循 [LICENSE](./LICENSE) 并注明出处 [@CONGMIN](https://github.com/cong-min/resume)**

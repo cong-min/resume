@@ -1,106 +1,76 @@
-// 打印样式
-// 调试方式 Chrome Devtools > Menu > More Tools > Rendering -> Emulate CSS media: print.
-@media print {
-    body {
-        padding-top: 0;
-    }
-    .content {
-        width: 1024px;
-        height: 1450px; // A4 大小
-        margin: 0 auto;
-        border-radius: 0;
-        box-shadow: none;
-        .content-hd {
-            padding-top: 60px;
-            padding-bottom: 40px;
-            .title {
-                font-size: 56px;
-                padding-bottom: 5px;
-                margin-bottom: 5px;
-            }
-            .name h1 small {
-                font-size: 26px;
-                padding-left: 12px;
-            }
-            .job h2 {
-                font-size: 26px;
-            }
-            .info {
-                line-height: 32px;
-                h2 {
-                    font-size: 19px;
-                }
-                h3 {
-                    font-size: 17px;
-                }
-            }
-            .contact ul {
-                > li {
-                    height: 25px;
-                    > a {
-                        font-size: 15px;
-                    }
-                }
-            }
-        }
-        .content-bd {
-            padding-top: 25px;
-            padding-bottom: 50px;
-        }
-        section {
-            padding-top: 12px;
-            padding-bottom: 12px;
-            ~ section {
-                padding-top: 0;
-            }
-        }
-        .section-hd {
-            padding-bottom: 10px;
-        }
-        .item-hd {
-            padding-bottom: 6px;
-        }
-        .item-bd {
-            margin-bottom: 8px;
-        }
-        .section-content {
-            line-height: 26px !important;
-        }
-        .print-hidden {
-            display: none;
-        }
-    }
-    .pdf {
-        display: none;
-    }
-    .last-modified {
-        position: absolute;
-        z-index: 1;
-        width: 970px;
-        top: auto;
-        bottom: 25px;
-        text-align: left;
-        padding-left: 20px;
-        color: #d1d1d1;
-    }
-    footer {
-        position: absolute;
-        z-index: 1;
-        width: 970px;
-        bottom: 25px;
-        left: 50%;
-        transform: translateX(-50%);
-        text-align: right;
-        padding-right: 20px;
-        &.github-footer {
-            display: none;
-        }
-        &.print-footer {
-            display: block;
-            .footer-link {
-                margin: 0;
-            }
-        }
-    }
-}
+/**
+ * 打印样式
+ * 调试方式 Chrome Devtools > Menu > More Tools > Rendering -> Emulate CSS media: print.
+ */
+@import './print-page.css';
 
+// 覆盖打印样式
+@media print {
+  // 隐藏部分元素
+  .status-bar .status,
+  .pdf,
+  footer.license-footer {
+    display: none;
+  }
+  // 内容
+  body {
+    background-color: unset;
+  }
+  .content {
+    margin: 0 auto;
+    border-radius: 0;
+    box-shadow: none;
+    padding-bottom: 32px;
+    .content-hd {
+      padding-top: 40px;
+      padding-bottom: 32px;
+      .job {
+        font-weight: 400;
+        -webkit-font-smoothing: unset;
+        opacity: 0.96;
+      }
+    }
+    .content-bd section {
+      margin-bottom: 20px;
+      .section-hd {
+        margin-bottom: 8px;
+      }
+    }
+  }
+  .status-bar {
+    position: absolute;
+    z-index: 1;
+    width: 1024px;
+    top: unset;
+    bottom: 24px;
+    text-align: left;
+    padding: 0 48px;
+    color: #d1d1d1;
+    font-size: 12px;
+    line-height: 24px;
+    .last-modified {
+      float: left;
+    }
+  }
+  footer {
+    position: absolute;
+    z-index: 1;
+    width: 1024px;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 13px;
+    line-height: 24px;
+    text-align: right;
+    padding: 0 48px;
+    &.github-footer {
+      display: none;
+    }
+    &.print-footer {
+      display: block;
+      .footer-link {
+        margin: 0;
+      }
+    }
+  }
+}

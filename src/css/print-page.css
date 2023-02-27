@@ -1,0 +1,9 @@
+/* 页面大小与边距 */
+@page {
+  size: A4;
+  margin: 48px 0 32px;
+}
+/* 第一页顶部去掉边距 */
+@page :first {
+  margin-top: 0;
+}
