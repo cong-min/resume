@@ -1,0 +1,80 @@
+/**
+ * 打印样式
+ * 调试方式 Chrome Devtools > Menu > More Tools > Rendering -> Emulate CSS media: print.
+ */
+@import './print-page.css';
+
+// 覆盖打印样式
+@media print {
+  // 隐藏部分元素
+  .status-bar .status,
+  .pdf,
+  footer.license-footer {
+    display: none;
+  }
+  // 内容
+  body {
+    background-color: unset;
+  }
+  .kill-ie,
+  .top-bar {
+    position: absolute;
+  }
+  .content {
+    margin: 0 auto;
+    border-radius: 0;
+    box-shadow: none;
+    padding-bottom: 32px;
+    .content-hd {
+      padding-top: 40px;
+      padding-bottom: 32px;
+      .job {
+        font-weight: 400;
+        -webkit-font-smoothing: unset;
+        opacity: 0.96;
+      }
+    }
+    .content-bd section {
+      margin-bottom: 20px;
+      .section-hd {
+        margin-bottom: 8px;
+      }
+    }
+  }
+  .status-bar {
+    position: absolute;
+    z-index: 1;
+    width: 1024px;
+    top: unset;
+    bottom: 24px;
+    text-align: left;
+    padding: 0 48px;
+    color: #d1d1d1;
+    font-size: 12px;
+    line-height: 24px;
+    .last-modified {
+      float: left;
+    }
+  }
+  footer {
+    position: absolute;
+    z-index: 1;
+    width: 1024px;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 13px;
+    line-height: 24px;
+    text-align: right;
+    padding: 0 48px;
+    &.github-footer {
+      display: none;
+    }
+    &.print-footer {
+      display: block;
+      .footer-link {
+        margin: 0;
+      }
+    }
+  }
+}
