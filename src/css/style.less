@@ -1,0 +1,63 @@
+// 定制化样式
+#skill {
+  .section-content {
+    line-height: 30px;
+    margin-bottom: 3px;
+  }
+}
+
+#experience {
+  .section-content {
+    strong {
+      color: #363636;
+    }
+  }
+}
+
+#practice {
+  .item-main {
+    .item-hd {
+      padding-top: 6px;
+    }
+    ~ .item {
+      .item-hd {
+        padding-top: 4px;
+      }
+    }
+  }
+  .item-more.btn {
+    float: left;
+    font-size: 12px;
+    margin-left: 12px;
+    border: 1px solid #999;
+    color: #777;
+    &:hover {
+      color: #fff;
+      border: 1px solid #777;
+      background-color: #777;
+    }
+    @media screen and (max-width: 720px) {
+      position: unset;
+    }
+  }
+  .item-name {
+    float: left;
+  }
+  .item-time {
+    float: right;
+    color: #666;
+    font-size: 14px;
+    width: 100px;
+    text-align: right;
+    display: inline;
+  }
+}
+
+// 打印样式
+@media print {
+  #experience {
+    .section-hd {
+      margin-bottom: 4px;
+    }
+  }
+}
