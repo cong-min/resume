@@ -20,3 +20,8 @@
 ---
 
 **Fork 或借鉴请遵循 [LICENSE](./LICENSE) 并注明出处 [@CONGMIN](https://github.com/cong-min/resume)**
+
+
+[CC-BY-SA-4.0](./LICENSE)
+
+Copyright (c) 2016-present, Cong Min
